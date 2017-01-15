@@ -27,10 +27,13 @@ namespace MainApp
         }
 
         //**********************************************************************
+        //**********************************************************************
+        //**********************************************************************
 
         public void doRun1()
         {
             Console.WriteLine("doRun1");
+            Console.WriteLine("be_function1 {0}", FrontEnd.be_function1(101));
         }
 
         //**********************************************************************
@@ -40,7 +43,25 @@ namespace MainApp
 
         [DllImport(cDLLName)]
         public static extern int be_function1(int aN);
+
+        public delegate void MyCallback();
+        [DllImport(cDLLName)]
+        public static extern void be_function2(MyCallback callback);
             
+        //**********************************************************************
+        //**********************************************************************
+        //**********************************************************************
+
+        public void doCallback()
+        {
+            Console.WriteLine("doCallback");
+        }
+
+        public void doRun2()
+        {
+            be_function2(doCallback);
+        }
+
     };
 
 }

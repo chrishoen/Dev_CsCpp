@@ -10,7 +10,16 @@
 //******************************************************************************
 // Initialize
 
-int be_function1(int aN)
+int DllExport be_function1(int aN)
 {
    return aN + 1;
+}
+
+void DllExport be_function2(PFN_MYCALLBACK aCallback)
+{
+   // Guard.
+   if (aCallback==0) return;
+
+   // Call the callback.
+   aCallback();
 }
