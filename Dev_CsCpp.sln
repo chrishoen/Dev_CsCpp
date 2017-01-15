@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{810C1015-7EEC-469D-A06A-DB8862AB4630}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontEndProc", "FrontEndProc\FrontEndProc.csproj", "{B11D5C2E-077B-4DFF-8466-5218D2298ECF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A75B9D0C-251F-42A8-9534-EF2E64F3A7EB} = {A75B9D0C-251F-42A8-9534-EF2E64F3A7EB}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BackEndDLL", "BackEndDLL\BackEndDLL.vcxproj", "{A75B9D0C-251F-42A8-9534-EF2E64F3A7EB}"
 EndProject
