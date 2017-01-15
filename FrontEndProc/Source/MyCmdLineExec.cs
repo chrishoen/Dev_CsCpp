@@ -27,6 +27,8 @@ namespace MainApp
         public override void execute(CmdLineCmd aCmd)
         {
             if (aCmd.isCmd("Run1"))   OnRun1(aCmd);
+            if (aCmd.isCmd("F1"))     OnFunction1(aCmd);
+
             if (aCmd.isCmd("GO1")) OnGo1(aCmd);
             if (aCmd.isCmd("GO2")) OnGo2(aCmd);
             if (aCmd.isCmd("GO3")) OnGo3(aCmd);
@@ -42,6 +44,15 @@ namespace MainApp
         {
             FrontEnd tFrontEnd = new FrontEnd();
             tFrontEnd.doRun1();
+        }
+
+        //**********************************************************************
+        //**********************************************************************
+        //**********************************************************************
+
+        public void OnFunction1(CmdLineCmd aCmd)
+        {
+            Console.WriteLine("be_function1 {0}", FrontEnd.be_function1(101));
         }
 
         //**********************************************************************
