@@ -10,20 +10,15 @@
     <ClCompile Include="Source\dllmain.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\stdafx.cpp">
+    <ClCompile Include="Source\BackEndDLL.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Source\ReadMe.txt">
-      <Filter>Source</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\stdafx.h">
       <Filter>Source</Filter>
     </ClInclude>
-    <ClInclude Include="Source\targetver.h">
+    <ClInclude Include="Source\BackEndDLL.h">
       <Filter>Source</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,10 +1,16 @@
-#pragma once
+#include <stdio.h>
+#include <string.h>
+#include <windows.h>
+#include <atomic>
+#include "BackEndDLL.h"
+
 
 //******************************************************************************
 //******************************************************************************
 //******************************************************************************
+// Initialize
 
-void main_initialize(int argc,char** argv);
-void main_finalize();
-
-
+int be_function1(int aN)
+{
+   return aN + 1;
+}

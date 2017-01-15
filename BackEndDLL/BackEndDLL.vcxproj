@@ -19,15 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\BackEndDLL.cpp" />
     <ClCompile Include="Source\dllmain.cpp" />
-    <ClCompile Include="Source\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Source\ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="Source\BackEndDLL.h" />
     <ClInclude Include="Source\stdafx.h" />
-    <ClInclude Include="Source\targetver.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A75B9D0C-251F-42A8-9534-EF2E64F3A7EB}</ProjectGuid>

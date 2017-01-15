@@ -1,5 +1,4 @@
-#ifndef _CMDLINEEXEC_H_
-#define _CMDLINEEXEC_H_
+#pragma once
 
 #include "risCmdLineExec.h"
 
@@ -25,7 +24,4 @@ public:
   double mX;
   double mT;
 };
-
-//******************************************************************************
-#endif
 
