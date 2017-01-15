@@ -26,6 +26,7 @@ namespace MainApp
 
         public override void execute(CmdLineCmd aCmd)
         {
+            if (aCmd.isCmd("Run1"))   OnRun1(aCmd);
             if (aCmd.isCmd("GO1")) OnGo1(aCmd);
             if (aCmd.isCmd("GO2")) OnGo2(aCmd);
             if (aCmd.isCmd("GO3")) OnGo3(aCmd);
@@ -33,6 +34,18 @@ namespace MainApp
             if (aCmd.isCmd("GO5")) OnGo5(aCmd);
         }
 
+        //**********************************************************************
+        //**********************************************************************
+        //**********************************************************************
+
+        public void OnRun1(CmdLineCmd aCmd)
+        {
+            FrontEnd tFrontEnd = new FrontEnd();
+            tFrontEnd.doRun1();
+        }
+
+        //**********************************************************************
+        //**********************************************************************
         //**********************************************************************
 
         public void OnGo1(CmdLineCmd aCmd)
