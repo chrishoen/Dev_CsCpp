@@ -17,8 +17,8 @@ extern "C" {
 
 int DllExport be_function1(int aN);
 
-typedef void (__stdcall *PFN_MYCALLBACK)();
-void DllExport be_function2(PFN_MYCALLBACK aCcallback);
+typedef void (__stdcall *Callback2)();
+void DllExport be_function2(Callback2 aCallback);
 
 //******************************************************************************
 //******************************************************************************

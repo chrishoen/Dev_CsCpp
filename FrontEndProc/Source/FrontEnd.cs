@@ -29,6 +29,18 @@ namespace MainApp
         //**********************************************************************
         //**********************************************************************
         //**********************************************************************
+        public const string cDLLName = @"..\..\..\x64\Release\BackEndDLL.dll";
+
+        [DllImport(cDLLName)]
+        public static extern int be_function1(int aN);
+
+        public delegate void Callback2();
+        [DllImport(cDLLName)]
+        public static extern void be_function2(Callback2 callback);
+            
+        //**********************************************************************
+        //**********************************************************************
+        //**********************************************************************
 
         public void doRun1()
         {
@@ -36,18 +48,6 @@ namespace MainApp
             Console.WriteLine("be_function1 {0}", FrontEnd.be_function1(101));
         }
 
-        //**********************************************************************
-        //**********************************************************************
-        //**********************************************************************
-        public const string cDLLName = @"..\..\..\x64\Release\BackEndDLL.dll";
-
-        [DllImport(cDLLName)]
-        public static extern int be_function1(int aN);
-
-        public delegate void MyCallback();
-        [DllImport(cDLLName)]
-        public static extern void be_function2(MyCallback callback);
-            
         //**********************************************************************
         //**********************************************************************
         //**********************************************************************

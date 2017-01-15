@@ -15,7 +15,7 @@ int DllExport be_function1(int aN)
    return aN + 1;
 }
 
-void DllExport be_function2(PFN_MYCALLBACK aCallback)
+void DllExport be_function2(Callback2 aCallback)
 {
    // Guard.
    if (aCallback==0) return;
