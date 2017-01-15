@@ -52,14 +52,14 @@ namespace MainApp
         //**********************************************************************
         //**********************************************************************
 
-        public void doCallback()
+        public void doCallback2()
         {
-            Console.WriteLine("doCallback");
+            Console.WriteLine("doCallback2");
         }
 
         public void doRun2()
         {
-            be_function2(doCallback);
+            be_function2(doCallback2);
         }
 
     };
