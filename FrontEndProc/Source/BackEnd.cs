@@ -9,10 +9,8 @@ namespace MainApp
     //**************************************************************************
     //**************************************************************************
     //**************************************************************************
-    // This class provides bindings to functions that are exported by the
-    // back end dll A call to one of these is a call to the function in the dll.
-    // These is a one to one correspondence between the functions defined here
-    // and the functions in the dll.
+    // This class provides bindings to functions that are exported by the back 
+    // end dll. A call to one of these is a call to the function in the dll.
 
     public class BackEnd
     {
