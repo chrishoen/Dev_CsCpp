@@ -9,7 +9,8 @@ namespace MainApp
     //**************************************************************************
     //**************************************************************************
     //**************************************************************************
-    // 
+    // This is a front end example class. It calls functions that reside in
+    // the back end dll.
 
     public class FrontEnd
     {
@@ -29,28 +30,17 @@ namespace MainApp
         //**********************************************************************
         //**********************************************************************
         //**********************************************************************
-        public const string cDLLName = @"..\..\..\x64\Release\BackEndDLL.dll";
-
-        [DllImport(cDLLName)]
-        public static extern int be_function1(int aN);
-
-        public delegate void Callback2();
-        [DllImport(cDLLName)]
-        public static extern void be_function2(Callback2 callback);
-            
-        //**********************************************************************
-        //**********************************************************************
-        //**********************************************************************
+        // Call the back end function.
 
         public void doRun1()
         {
-            Console.WriteLine("doRun1");
-            Console.WriteLine("be_function1 {0}", FrontEnd.be_function1(101));
+            Console.WriteLine("be_function1 {0}", BackEnd.be_function1(101));
         }
 
         //**********************************************************************
         //**********************************************************************
         //**********************************************************************
+        // Call the back end function.
 
         public void doCallback2()
         {
@@ -59,7 +49,7 @@ namespace MainApp
 
         public void doRun2()
         {
-            be_function2(doCallback2);
+            BackEnd.be_function2(doCallback2);
         }
 
     };

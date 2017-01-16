@@ -15,8 +15,10 @@ extern "C" {
 //******************************************************************************
 //******************************************************************************
 
+// Increment a parameter.
 int DllExport be_function1(int aN);
 
+// Call a callback.
 typedef void (__stdcall *Callback2)();
 void DllExport be_function2(Callback2 aCallback);
 
