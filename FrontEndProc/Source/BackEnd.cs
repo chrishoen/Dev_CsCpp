@@ -9,7 +9,8 @@ namespace MainApp
     //**************************************************************************
     //**************************************************************************
     //**************************************************************************
-    // Record1.
+    // Record1. This is used by the back end dll.
+
     [StructLayout(LayoutKind.Sequential, CharSet=CharSet.Ansi)]
     public struct BackEndRecord1
     {
@@ -19,23 +20,6 @@ namespace MainApp
         public int mCode4;
     } 
 
-    //**************************************************************************
-    //**************************************************************************
-    //**************************************************************************
-    // This class provides bindings to functions that are exported by the back 
-    // end dll. A call to one of these is a call to the function in the dll.
-
-    public class BackEndHelper
-    {
-        public static void show(BackEndRecord1 aRecord)
-        {
-            Console.WriteLine("BackEndRecord1 Code1    {0}",aRecord.mCode1);
-            Console.WriteLine("BackEndRecord1 Code2    {0}",aRecord.mCode2);
-            Console.WriteLine("BackEndRecord1 Code3    {0}",aRecord.mCode3);
-            Console.WriteLine("BackEndRecord1 Code4    {0}",aRecord.mCode4);
-        }
-            
-    };
     //**************************************************************************
     //**************************************************************************
     //**************************************************************************
@@ -61,7 +45,6 @@ namespace MainApp
         // Initialize a struct.
         [DllImport(cDLLName)]
         public static extern void be_function3(ref BackEndRecord1 aRecord);
-            
     };
 
 }
