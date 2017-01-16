@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\BackEndData.cpp" />
     <ClCompile Include="Source\BackEndDLL.cpp" />
     <ClCompile Include="Source\dllmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\BackEndData.h" />
     <ClInclude Include="Source\BackEndDLL.h" />
     <ClInclude Include="Source\stdafx.h" />
   </ItemGroup>

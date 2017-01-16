@@ -11,21 +11,20 @@
 extern "C" {
 #endif
   
-#include "BackEndData.h"
-
 //******************************************************************************
 //******************************************************************************
 //******************************************************************************
+// Record1.
 
-// Increment a parameter.
-int DllExport be_function1(int aN);
+typedef struct
+{
+   int mCode1;
+   int mCode2;
+   int mCode3;
+   int mCode4;
+} BackEndRecord1;
 
-// Call a callback.
-typedef void (__stdcall *Callback2)();
-void DllExport be_function2(Callback2 aCallback);
-
-// Initialize a struct.
-void DllExport be_function3(BackEndRecord1* aRecord);
+void initialize(BackEndRecord1* aRecord);
 
 //******************************************************************************
 //******************************************************************************

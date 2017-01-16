@@ -13,12 +13,18 @@
     <ClCompile Include="Source\BackEndDLL.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\BackEndData.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\stdafx.h">
       <Filter>Source</Filter>
     </ClInclude>
     <ClInclude Include="Source\BackEndDLL.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BackEndData.h">
       <Filter>Source</Filter>
     </ClInclude>
   </ItemGroup>

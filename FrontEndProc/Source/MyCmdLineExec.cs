@@ -28,6 +28,7 @@ namespace MainApp
         {
             if (aCmd.isCmd("Run1"))   OnRun1(aCmd);
             if (aCmd.isCmd("Run2"))   OnRun2(aCmd);
+            if (aCmd.isCmd("Run3"))   OnRun3(aCmd);
 
             if (aCmd.isCmd("GO1")) OnGo1(aCmd);
             if (aCmd.isCmd("GO2")) OnGo2(aCmd);
@@ -54,6 +55,16 @@ namespace MainApp
         {
             FrontEnd tFrontEnd = new FrontEnd();
             tFrontEnd.doRun2();
+        }
+
+        //**********************************************************************
+        //**********************************************************************
+        //**********************************************************************
+
+        public void OnRun3(CmdLineCmd aCmd)
+        {
+            FrontEnd tFrontEnd = new FrontEnd();
+            tFrontEnd.doRun3();
         }
 
         //**********************************************************************

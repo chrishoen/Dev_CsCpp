@@ -52,6 +52,18 @@ namespace MainApp
             BackEnd.be_function2(doCallback2);
         }
 
+        //**********************************************************************
+        //**********************************************************************
+        //**********************************************************************
+        // Call the back end function.
+
+        public void doRun3()
+        {
+            BackEndRecord1 tRecord = new BackEndRecord1();
+            BackEnd.be_function3(ref tRecord);
+            BackEndHelper.show(tRecord);
+        }
+
     };
 
 }
