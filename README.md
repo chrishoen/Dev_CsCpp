@@ -1,3 +1,0 @@
-# C# to C++ interoperability 
-
-
